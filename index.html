@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <title>Hero's Journey Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Hero's Journey Matching & Sequence</h1>
+    <p class="instructions">Match the Hero Quality/Event pairs first, then drag matched cards into the correct timeline order!</p>
+
+    <div class="stats-bar">
+      <span>⏱️️ Time: <strong id="timer">00:00</strong></span>
+      <span>🎯 Moves: <strong id="moveCount">0</strong></span>
+    </div>
+
+    <div id="statusMessage" class="status-message"></div>
+
+    <button id="resetBtn" class="reset-btn">Restart Game</button>
+
+    <!-- Card Grid -->
+    <div id="cardGrid" class="card-grid"></div>
+
+    <!-- Timeline Section -->
+    <div class="timeline-container">
+      <h2>Timeline Sequence</h2>
+      <div class="timeline-grid" id="timeline"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
